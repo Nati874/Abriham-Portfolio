@@ -1,0 +1,14 @@
+.git
+.gitignore
+README.md
+node_modules
+.env
+.env.local
+.DS_Store
+*.log
+.manus-logs
+.project-config.json
+patches
+server
+shared
+template.json

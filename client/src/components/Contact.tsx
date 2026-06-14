@@ -4,14 +4,16 @@ import { Mail, MessageCircle, Send, Instagram } from 'lucide-react';
 export default function Contact() {
   const titleRef = useScrollAnimation({ threshold: 0.3 });
   const formRef = useScrollAnimation({ threshold: 0.3, delay: 100 });
+  const infoRef = useScrollAnimation({ threshold: 0.3, delay: 200 });
+  const socialRef = useScrollAnimation({ threshold: 0.3, delay: 300 });
 
   const contactLinks = [
     { 
       icon: Mail, 
-      href: 'mailto:abriham@example.com', 
+      href: 'mailto:Abrishedmealem23@gmail.com', 
       label: 'Email', 
       color: 'hover:text-red-500',
-      title: 'Send Email'
+      title: 'Email: Abrishedmealem23@gmail.com'
     },
     { 
       icon: MessageCircle, 
@@ -22,17 +24,17 @@ export default function Contact() {
     },
     { 
       icon: Send, 
-      href: 'https://t.me/Abrish32', 
+      href: 'https://t.me/abrish32', 
       label: 'Telegram', 
       color: 'hover:text-blue-400',
-      title: 'Telegram: @Abrish32'
+      title: 'Telegram: @abrish32'
     },
     { 
       icon: Instagram, 
-      href: '#', 
+      href: 'https://instagram.com/abrish.23_', 
       label: 'Instagram', 
       color: 'hover:text-pink-500',
-      title: 'Instagram'
+      title: 'Instagram: abrish.23_'
     },
   ];
 
@@ -83,13 +85,13 @@ export default function Contact() {
           {/* Contact Info & Social */}
           <div className="space-y-12">
             {/* Direct Contact */}
-            <div className="scroll-fade-in" style={{ transitionDelay: '200ms' }}>
+            <div ref={infoRef} className="scroll-fade-in">
               <h3 className="text-2xl font-bold mb-6">Contact Information</h3>
               <div className="space-y-6">
                 <div>
                   <p className="text-sm text-muted-foreground mb-2 font-semibold">Email</p>
-                  <a href="mailto:abriham@example.com" className="text-lg text-foreground hover:text-accent transition-colors">
-                    abriham@example.com
+                  <a href="mailto:Abrishedmealem23@gmail.com" className="text-lg text-foreground hover:text-accent transition-colors">
+                    Abrishedmealem23@gmail.com
                   </a>
                 </div>
                 <div>
@@ -100,15 +102,15 @@ export default function Contact() {
                 </div>
                 <div>
                   <p className="text-sm text-muted-foreground mb-2 font-semibold">Telegram</p>
-                  <a href="https://t.me/Abrish32" className="text-lg text-foreground hover:text-accent transition-colors">
-                    @Abrish32
+                  <a href="https://t.me/abrish32" className="text-lg text-foreground hover:text-accent transition-colors">
+                    @abrish32
                   </a>
                 </div>
               </div>
             </div>
 
             {/* Social Links */}
-            <div className="scroll-fade-in" style={{ transitionDelay: '300ms' }}>
+            <div ref={socialRef} className="scroll-fade-in">
               <h3 className="text-2xl font-bold mb-6">Connect With Me</h3>
               <div className="flex gap-6">
                 {contactLinks.map((contact) => {

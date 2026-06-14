@@ -9,9 +9,14 @@ export default function Hero() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
           {/* Left: Image */}
           <div className="flex justify-center md:justify-start order-2 md:order-1">
-            <div className="w-64 h-80 bg-secondary shadow-lg">
-              <div className="w-full h-full bg-gradient-to-br from-accent/20 to-accent/5 flex items-center justify-center">
-                <span className="text-muted-foreground text-sm">Profile Image</span>
+            <div className="relative w-64 h-80 bg-secondary shadow-lg group">
+              <div className="absolute inset-0 border-2 border-accent/40 -translate-x-4 translate-y-4 transition-transform group-hover:-translate-x-2 group-hover:translate-y-2 duration-300" />
+              <div className="w-full h-full overflow-hidden relative z-10">
+                <img 
+                  src="/pictures/home page picture.jpg" 
+                  alt="Abriham Edmealem" 
+                  className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500 scale-100 hover:scale-105" 
+                />
               </div>
             </div>
           </div>

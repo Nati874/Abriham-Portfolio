@@ -8,7 +8,5 @@ node_modules
 *.log
 .manus-logs
 .project-config.json
-patches
 server
-shared
 template.json

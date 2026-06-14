@@ -8,12 +8,12 @@ export default function Skills() {
     {
       category: 'Video Editing',
       icon: Scissors,
-      skills: ['Adobe Premiere Pro', 'DaVinci Resolve', 'CapeCut', 'Clip Champ'],
+      skills: ['Adobe Premiere Pro', 'CapeCut', 'Clip Champ'],
     },
     {
       category: 'Graphic Design',
       icon: Palette,
-      skills: ['Adobe Photoshop', 'Adobe Illustrator', 'Canva', 'Figma'],
+      skills: ['Adobe Photoshop', 'Canva'],
     },
     {
       category: 'Filmmaking',

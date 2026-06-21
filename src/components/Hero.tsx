@@ -25,7 +25,7 @@ export default function Hero() {
           <div ref={ref} className="scroll-fade-in order-1 md:order-2">
             <p className="text-accent text-xs font-semibold tracking-widest uppercase mb-4">Hi I am</p>
             <h1 className="text-6xl md:text-7xl font-bold mb-4 leading-tight">
-              <span className="text-foreground block">Abriham</span>
+              <span className="text-foreground block">Abrham</span>
               <span className="text-accent block">Edmealem</span>
             </h1>
             <p className="text-foreground/70 text-lg mb-10 leading-relaxed max-w-md">

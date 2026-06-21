@@ -1,7 +1,7 @@
 {
   "buildCommand": "npm run build",
   "devCommand": "npm run dev",
-  "installCommand": "npm install --include=optional && npm install --no-save --platform=linux --arch=x64 lightningcss @rollup/rollup-linux-x64-gnu",
+  "installCommand": "npm install --include=optional && npm install --no-save --platform=linux --arch=x64 lightningcss @rollup/rollup-linux-x64-gnu @tailwindcss/oxide-linux-x64-gnu @tailwindcss/oxide-linux-x64-musl",
   "framework": "vite",
   "outputDirectory": "dist/public",
   "rewrites": [
